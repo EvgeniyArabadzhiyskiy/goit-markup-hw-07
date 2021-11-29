@@ -18,6 +18,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Section Padding */
+
+.section{
+  padding: 94px 0px;
+}
 
 /* Сброс стилей */
 
@@ -45,7 +50,7 @@ img {
   height: auto; 
 }
 
-/* СТРАНИЦА СТУДИЯ */
+
 
 .container{
   width: 1200px;
@@ -54,6 +59,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* СТРАНИЦА СТУДИЯ */
 
 /* Page-header */
 
@@ -89,16 +96,13 @@ img {
 }
 
 .site-nav__item{
+  position: relative;
+  display: flex;
   margin-left: 50px;
 }
 
 .site-nav__item:first-child{
   margin-left: 0px;
-}
-
-.site-nav__item{
-  position: relative;
-  display: flex;
 }
 
 .site-nav__link--current::after{
@@ -126,12 +130,13 @@ img {
 }
 
 .site-nav__link:hover,
-.contact-list__link:hover {
+.site-nav__link:focus{
   color: var(--accent-color);
 }
 
-.site-nav__link:focus,
-.contact-list__link:focus {
+
+.contact-list__link:hover,
+.contact-list__link:focus{
   color: var(--accent-color);
 }
 
@@ -154,11 +159,6 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-list__link:hover .contact-list__icon , 
-.contact-list__link:focus .contact-list__icon{
-  fill: var(--icon-color-client-hover);
-}
-
 .contact-list__item{
   margin-left: 30px;
 }
@@ -170,6 +170,12 @@ img {
 .contact-list__link {
   color: var(--secondary-text-color);
 }
+
+.contact-list__link:hover .contact-list__icon , 
+.contact-list__link:focus .contact-list__icon{
+  fill: var(--icon-color-client-hover);
+}
+
 
 /* Hero */
 
@@ -217,15 +223,10 @@ img {
   line-height: 1.88;
 }
 
-.button__primery:hover{
+.button__primery:hover, 
+.button__primery:focus{
   background-color:  #188CE8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-/* Section Padding */
-
-.section{
-  padding: 94px 0px;
 }
 
 /* Advantages */
@@ -578,9 +579,11 @@ img {
   text-align: center;
   vertical-align: top;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.button-subscription:hover{
+.button-subscription:hover,
+.button-subscription:focus{
   background-color: #188CE8;
 } 
 
@@ -592,7 +595,7 @@ img {
   background-color: #F5F4FA;
   line-height: 1.62;
   padding: 6px 22px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 

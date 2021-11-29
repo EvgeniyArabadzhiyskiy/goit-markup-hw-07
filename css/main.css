@@ -1,0 +1,249 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background-color: #ffffff;
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* Сброс стилей */
+.title {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Padding */
+.section {
+  padding: 94px 0px;
+}
+
+/* СТРАНИЦА СТУДИЯ */
+/* Page-header */
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.pege-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+/* Logo */
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: #2196f3;
+  font-size: 26px;
+  line-height: 1.17;
+  padding: 20px 0;
+}
+
+.logo__color--header {
+  color: #000000;
+}
+
+/* Site nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav__item {
+  position: relative;
+  display: flex;
+  margin-left: 50px;
+}
+
+.site-nav__item:first-child {
+  margin-left: 0px;
+}
+
+.site-nav__link--current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: " ";
+  display: block;
+  width: 100%;
+  border-bottom: 4px solid #2196f3;
+  border-radius: 4px;
+}
+
+.site-nav__link,
+.contact-list__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover, .site-nav__link:focus,
+.contact-list__link:hover,
+.contact-list__link:focus {
+  color: #2196f3;
+}
+
+/* Contact */
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list__icon {
+  margin-right: 10px;
+  fill: #757575;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-list__item {
+  margin-left: 30px;
+}
+
+.contact-list__item:first-child {
+  margin-left: 0px;
+}
+
+.contact-list__link {
+  color: #757575;
+}
+
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
+  fill: #2196f3;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-color: #2F303A;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  border-style: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button__primery {
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: #2196f3;
+  line-height: 1.88;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__primery:hover, .button__primery:focus {
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Advantages */
+.advantage__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantage__list {
+  display: flex;
+}
+
+.advantage__item {
+  margin-right: 30px;
+  width: calc(100%/4);
+}
+
+.advantage__item:last-child {
+  margin-right: 0px;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  color: #757575;
+  line-height: 1.72;
+}
+/*# sourceMappingURL=main.css.map */
