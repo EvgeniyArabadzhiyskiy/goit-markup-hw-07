@@ -1,0 +1,36 @@
+.advantage__list{
+  display: flex;
+}
+
+.advantage__item{
+  margin-right: 30px;
+  width:calc(100%/4);
+
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.feature{
+  @include centered();
+  
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  color: $secondary-text-color;
+  line-height: 1.72;
+}
